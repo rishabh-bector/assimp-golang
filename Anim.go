@@ -1,6 +1,6 @@
 package assimp
 
-//#cgo linux LDFLAGS: -L/usr/local/lib -lassimp -lstdc++
+//#cgo LDFLAGS: -L${SRCDIR} -lassimp -lstdc++
 //#include <assimp/anim.h>
 import "C"
 
@@ -183,4 +183,3 @@ func (this *Animation) MeshChannels() []*MeshAnim {
 		return nil
 	}
 }
-
