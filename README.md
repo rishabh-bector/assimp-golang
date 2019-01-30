@@ -15,7 +15,8 @@ import (
 )
 
 func main {
-	scene := assimp.ImportFile("random.fbx", uint(assimp.Process_Triangulate|assimp.Process_FlipUVs))
+  
+  scene := assimp.ImportFile("random.fbx", uint(assimp.Process_Triangulate|assimp.Process_FlipUVs))
   
   rootNode := scene.RootNode()
   // etc etc
